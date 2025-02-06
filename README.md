@@ -33,6 +33,8 @@ ORDER BY TEKS, class_pd, test_name;
 How it Helps:
 This data structure allows a clear breakdown of performance by class period and test name.
 In Tableau, trend lines with data points reveal class performance over time, identifying consistencies or gaps in understanding.
+![SM 1 TEKS Performance Trends by Class Pd](https://github.com/user-attachments/assets/6f9431c7-0be2-4e3e-bb9b-a5d5c473763d)
+
 
 Goal-Setting and Progress Monitoring
 Using SQL, TEKS performance is categorized into four mastery levels:
@@ -52,6 +54,8 @@ Not Met
 0%-37%
 
 These classifications provide a quick overview of TEKS mastery, helping decide whether to move forward, reteach, or implement interventions.
+![SM 1 TEKS Mastry](https://github.com/user-attachments/assets/45edd677-de95-4c85-b2b3-898723eca6c5)
+
 
 Focused Analysis: Targeted TEKS (e.g., TEKS 8.8C)
 This query analyzes a specific TEKS across class periods:
@@ -75,6 +79,8 @@ ORDER BY class_pd, measure_name, measure_value;
 Key Insights:
 Identifies which classes made the most and least progress toward the 70% benchmark.
 Helps adjust instructional strategies per class period.
+![8 8C Mastery](https://github.com/user-attachments/assets/62661a89-c69e-47de-a27b-cbf0fb0ecce3)
+
 
 TEKS Performance Distribution
 This query calculates the average TEKS performance per class period:
@@ -88,6 +94,8 @@ Visualization:
 Box plots in Tableau illustrate TEKS performance spread within class periods.
 Median lines show overall TEKS performance for each class.
 Outliers highlight high- and low-performing TEKS.
+![TEKS Distribution](https://github.com/user-attachments/assets/467af713-455c-4092-b74e-8d1ad76e99c0)
+
 
 Pros & Cons of the Dashboard
 ✅ Pros:
@@ -99,3 +107,5 @@ Can become cluttered if too many TEKS are analyzed simultaneously.
 Requires familiarity with Tableau for in-depth exploration.
 
 https://public.tableau.com/views/SM1MathematicsTEKSTracker/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+![TEKS Performance](https://github.com/user-attachments/assets/bfd67bd5-51c2-4f1f-ab9a-e0df602d53aa)
+
