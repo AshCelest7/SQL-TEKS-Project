@@ -106,6 +106,8 @@ Supports data-driven decision-making for interventions.
 Can become cluttered if too many TEKS are analyzed simultaneously.
 Requires familiarity with Tableau for in-depth exploration.
 
-https://public.tableau.com/views/SM1MathematicsTEKSTracker/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+## Data Visualization
+Check out the interactive Tableau dashbaord
+Teks Performance
 ![TEKS Performance](https://github.com/user-attachments/assets/bfd67bd5-51c2-4f1f-ab9a-e0df602d53aa)
 
