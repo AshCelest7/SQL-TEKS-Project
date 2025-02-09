@@ -115,3 +115,38 @@ https://public.tableau.com/shared/639MTT5NY?:display_count=n&:origin=viz_share_l
 
 ![TEKS Performance](https://github.com/user-attachments/assets/bfd67bd5-51c2-4f1f-ab9a-e0df602d53aa)
 
+## DATA SAMPLE    
+This is a data sample from project: 
+You can inport it into SQLite online; that is where I aggregated data. 
+Here are some example queries you can run on the sample dataset:
+
+1. Calaculate Average Scores for each TEKS.
+   
+SELECT
+    TEKS,
+    AVG(test_1_5) AS avg_test_1_5,
+    AVG(test_1) AS avg_test_1,
+    AVG(test_2_5) AS avg_test_2_5,
+    AVG(test_2) AS avg_test_2,
+    AVG(test_3_5) AS avg_test_3_5,
+    AVG(test_3) AS avg_test_3
+FROM teks_tracker_SM1
+GROUP BY TEKS;
+
+2. Compare Performance Across Class Periods for a Specific TEKS
+SELECT
+    class_pd,
+    TEKS,
+    (AVG(test_1_5) + AVG(test_1) + AVG(test_2_5) + AVG(test_2) + AVG(test_3_5) + AVG(test_3)) / 6 AS avg_score
+FROM teks_tracker_SM1
+WHERE TEKS = '8.8C'
+GROUP BY class_pd, TEKS;
+
+3. Identify Classes with the Highest and Lowest Scores
+SELECT
+    class_pd,
+    TEKS,
+    (AVG(test_1_5) + AVG(test_1) + AVG(test_2_5) + AVG(test_2) + AVG(test_3_5) + AVG(test_3)) / 6 AS avg_score
+FROM teks_tracker_SM1
+GROUP BY class_pd, TEKS
+ORDER BY avg_score DESC;
