@@ -108,6 +108,6 @@ Requires familiarity with Tableau for in-depth exploration.
 
 ## Data Visualization
 Check out the interactive Tableau dashbaord
-Teks Performance
+![TEKS Tableau Dashboard](https://public.tableau.com/shared/639MTT5NY?:display_count=n&:origin=viz_share_link) 
 ![TEKS Performance](https://github.com/user-attachments/assets/bfd67bd5-51c2-4f1f-ab9a-e0df602d53aa)
 
