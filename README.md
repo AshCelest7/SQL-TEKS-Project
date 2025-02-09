@@ -116,7 +116,7 @@ https://public.tableau.com/shared/639MTT5NY?:display_count=n&:origin=viz_share_l
 ![TEKS Performance](https://github.com/user-attachments/assets/bfd67bd5-51c2-4f1f-ab9a-e0df602d53aa)
 
 ## DATA SAMPLE    
-This is a data sample from project: 
+This is a data sample from project: ![TEKS Tracker Sample](./teks_tracker_sample.csv)
 You can inport it into SQLite online; that is where I aggregated data. 
 Here are some example queries you can run on the sample dataset:
 
