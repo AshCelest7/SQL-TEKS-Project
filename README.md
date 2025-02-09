@@ -11,6 +11,7 @@ Focused Analysis: Identifies specific TEKS needing improvement.
 Data Analysis Process
 1. SQL Query for TEKS Performance Comparison
 This query retrieves scores from different assessments and structures the data for trend analysis:
+
 SELECT TEKS, class_pd, 'test_1_5' AS test_name, test_1_5 AS score
 FROM teks_tracker_SM1
 UNION ALL
@@ -29,7 +30,7 @@ UNION ALL
 SELECT TEKS, class_pd, 'test_3' AS test_name, test_3 AS score
 FROM teks_tracker_SM1
 ORDER BY TEKS, class_pd, test_name;
-2. Visualization: Trend Lines in Tableau
+3. Visualization: Trend Lines in Tableau
 How it Helps:
 This data structure allows a clear breakdown of performance by class period and test name.
 In Tableau, trend lines with data points reveal class performance over time, identifying consistencies or gaps in understanding.
@@ -59,6 +60,7 @@ These classifications provide a quick overview of TEKS mastery, helping decide w
 
 Focused Analysis: Targeted TEKS (e.g., TEKS 8.8C)
 This query analyzes a specific TEKS across class periods:
+
 SELECT
     class_pd,
     '8.8C Average' AS measure_name,
@@ -84,6 +86,7 @@ Helps adjust instructional strategies per class period.
 
 TEKS Performance Distribution
 This query calculates the average TEKS performance per class period:
+
 SELECT
     class_pd,
     TEKS,
@@ -109,5 +112,6 @@ Requires familiarity with Tableau for in-depth exploration.
 ## Data Visualization
 Check out the interactive Tableau dashbaord
 https://public.tableau.com/shared/639MTT5NY?:display_count=n&:origin=viz_share_link 
+
 ![TEKS Performance](https://github.com/user-attachments/assets/bfd67bd5-51c2-4f1f-ab9a-e0df602d53aa)
 
